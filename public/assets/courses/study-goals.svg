@@ -1,0 +1,23 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 900 340"
+  role="img"
+  aria-labelledby="title"
+>
+  <title id="title">Metas para tu vida universitaria</title>
+  <rect width="900" height="340" rx="25" fill="#1d2927" />
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <text x="450" y="60" fill="#ffffff" font-size="24">
+      Metas para tu vida universitaria
+    </text>
+    <rect x="45" y="100" width="250" height="190" rx="20" fill="#d6f66b" />
+    <text x="170" y="178" fill="#1d2927" font-size="23" font-weight="bold">Definir</text>
+    <text x="170" y="228" fill="#1d2927" font-size="17">Una meta</text>
+    <rect x="325" y="100" width="250" height="190" rx="20" fill="#d9ccff" />
+    <text x="450" y="178" fill="#1d2927" font-size="23" font-weight="bold">Medir</text>
+    <text x="450" y="228" fill="#1d2927" font-size="17">Evidencias</text>
+    <rect x="605" y="100" width="250" height="190" rx="20" fill="#b8e6db" />
+    <text x="730" y="178" fill="#1d2927" font-size="23" font-weight="bold">Ajustar</text>
+    <text x="730" y="228" fill="#1d2927" font-size="17">Nuevas acciones</text>
+  </g>
+</svg>

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Nexo: tu universidad, cursos por carrera y banca de práctica conectada."
+    />
+    <meta name="theme-color" content="#1d2927" />
+    <title>Tu carrera, tu siguiente paso · Nexo</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%231d2927'/%3E%3Ctext x='10' y='29' fill='%23d6f66b' font-size='30'%3En%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/university.css" />
+    <link rel="stylesheet" href="/assets/experience.css" />
+    <script src="/assets/app.js" defer></script>
+    <script src="/assets/university.js" defer></script>
+    <script src="/assets/academy.js" defer></script>
+    <script src="/assets/experience.js" defer></script>
+  </head>
+  <body data-page="index">
+    <a class="sr-only" href="#content">Saltar al contenido</a>
+    <header id="header"></header>
+    <main id="content" class="container">
+      <section class="hero next-hero">
+        <div class="orb one"></div>
+        <div class="orb two"></div>
+        <div class="hero-content">
+          <span class="pill">Tu universidad. A tu manera.</span>
+          <h1>Aprende.<br />Avanza.<br /><em>Hazlo tuyo.</em></h1>
+          <p>
+            Un campus que va contigo. Cursos para tu carrera, tus semestres en orden y una
+            banca conectada a tu vida universitaria.
+          </p>
+          <div class="row">
+            <a class="btn lime" href="/universidad.html">Entrar a mi campus ↗</a
+            ><a class="btn translucent" href="#rutas">Explorar mi ruta ↓</a>
+          </div>
+          <div class="hero-foot">
+            <span class="status-dot"></span
+            ><span>Diseñado para tu computadora y tu teléfono</span>
+          </div>
+        </div>
+        <div class="hero-art campus-art" aria-hidden="true">
+          <div class="orbit orbit-motion"><span class="art-core">n.</span></div>
+          <div class="floating f1">✦ Aprende a tu ritmo</div>
+          <div class="floating f2">Tu próximo logro te espera ↗</div>
+          <div class="mini-card mini-academy">
+            <span>MI RUTA ACADÉMICA</span><strong>Tu carrera.<br />Tu contenido.</strong>
+            <div class="mini-progress"><i></i></div>
+          </div>
+          <div class="mini-card mini-pay">
+            <span>UNIVERSIDAD + BANCA</span><strong>Todo conectado ◈</strong>
+            <div class="mini-ticks"><b>✓ Cuotas</b><b>✓ Recibos</b></div>
+          </div>
+        </div>
+      </section>
+      <div class="motion-ribbon" aria-label="Universidad, aprendizaje, banca y metas">
+        <div aria-hidden="true">
+          TU CARRERA <b>✦</b> TU CAMPUS <b>✦</b> TUS METAS <b>✦</b> TU RITMO <b>✦</b> TU
+          CARRERA <b>✦</b> TU CAMPUS <b>✦</b> TUS METAS <b>✦</b> TU RITMO <b>✦</b>
+        </div>
+        <button
+          id="toggle-motion"
+          class="ribbon-toggle"
+          aria-label="Pausar animaciones"
+          aria-pressed="false"
+        >
+          Ⅱ
+        </button>
+      </div>
+      <div class="section-title" id="explorar">
+        <div>
+          <span class="eyebrow">MENOS VUELTAS. MÁS POSIBILIDADES.</span>
+          <h2>Todo lo que necesitas, conectado.</h2>
+        </div>
+        <span class="pill">Un solo Nexo</span>
+      </div>
+      <section class="grid portal-grid">
+        <article class="card module">
+          <div class="symbol">⌂</div>
+          <span class="eyebrow">01 / MI UNIVERSIDAD</span>
+          <h2>Tu camino,<br />más claro.</h2>
+          <p>
+            Consulta tu credencial, tus semestres, mensualidades y recibos desde un mismo
+            lugar.
+          </p>
+          <a href="/universidad.html">Explorar mi campus ↗</a>
+        </article>
+        <article class="card module">
+          <div class="symbol">↗</div>
+          <span class="eyebrow">02 / MI ACADEMIA</span>
+          <h2>Contenido que<br />sí va contigo.</h2>
+          <p>
+            Lecturas, videos y evaluaciones relacionados con la carrera de tu perfil.
+            Aprende y celebra tus logros.
+          </p>
+          <a href="/cursos.html">Ver mis cursos ↗</a>
+        </article>
+        <article class="card module">
+          <div class="symbol">◈</div>
+          <span class="eyebrow">03 / MI BANCA</span>
+          <h2>Tus cuentas,<br />sin enredos.</h2>
+          <p>
+            Paga tu universidad, consulta movimientos y genera comprobantes con dinero de
+            práctica.
+          </p>
+          <a href="/banca.html">Abrir mi banca ↗</a>
+        </article>
+      </section>
+      <section id="rutas" class="routes-section">
+        <div>
+          <span class="eyebrow">TUS INTERESES MARCAN LA RUTA</span>
+          <h2>No todos aprendemos<br />lo mismo. Y está bien.</h2>
+          <p class="muted">
+            Elige tu carrera al registrarte. Nexo conecta tu perfil con una ruta de
+            aprendizaje específica, desde el primer video hasta el diploma.
+          </p>
+          <a class="btn" href="/registro.html">Encontrar mi camino ↗</a>
+        </div>
+        <div class="route-preview">
+          <a href="/cursos.html"
+            ><span class="route-symbol accounting">Q</span>
+            <div>
+              <strong>Contaduría Pública</strong
+              ><small>Cuentas, balances y patrimonio</small>
+            </div>
+            <span>↗</span></a
+          ><a href="/cursos.html"
+            ><span class="route-symbol systems">&lt;/&gt;</span>
+            <div>
+              <strong>Ingeniería en Sistemas</strong
+              ><small>Desarrollo web y lógica</small>
+            </div>
+            <span>↗</span></a
+          ><a href="/cursos.html"
+            ><span class="route-symbol business">↗</span>
+            <div>
+              <strong>Administración de Empresas</strong
+              ><small>Procesos y objetivos</small>
+            </div>
+            <span>↗</span></a
+          ><a href="/cursos.html"
+            ><span class="route-symbol design">Aa</span>
+            <div>
+              <strong>Diseño y Comunicación</strong
+              ><small>Color, tipografía y jerarquía</small>
+            </div>
+            <span>↗</span></a
+          ><a href="/cursos.html"
+            ><span class="route-symbol general">✦</span>
+            <div>
+              <strong>Otra carrera</strong
+              ><small>Organización y metas universitarias</small>
+            </div>
+            <span>↗</span></a
+          >
+        </div>
+      </section>
+      <section class="journey-banner">
+        <div>
+          <span class="eyebrow">DE LA IDEA AL LOGRO</span>
+          <h2>Tu siguiente paso<br />puede empezar hoy.</h2>
+        </div>
+        <div class="journey-steps">
+          <div>
+            <b>01</b><strong>Elige tu carrera</strong
+            ><small>Una ruta para tu perfil.</small>
+          </div>
+          <div>
+            <b>02</b><strong>Aprende y practica</strong
+            ><small>Contenido que tiene sentido.</small>
+          </div>
+          <div>
+            <b>03</b><strong>Celebra tu avance</strong
+            ><small>Tu evaluación y tu diploma.</small>
+          </div>
+        </div>
+        <a class="btn lime" href="/cursos.html">Dar el siguiente paso ↗</a>
+      </section>
+    </main>
+    <footer class="container footer">
+      <span>© 2026 Nexo · Tu carrera, tu siguiente paso.</span
+      ><span>Proyecto académico · <a href="/universidad.html">Mi universidad ↗</a></span>
+    </footer>
+    <noscript>Activa JavaScript para utilizar la plataforma.</noscript>
+  </body>
+</html>

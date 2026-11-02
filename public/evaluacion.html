@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Nexo: tu universidad, cursos por carrera y banca de práctica conectada."
+    />
+    <meta name="theme-color" content="#1d2927" />
+    <title>Mi evaluación · Nexo</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%231d2927'/%3E%3Ctext x='10' y='29' fill='%23d6f66b' font-size='30'%3En%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/university.css" />
+    <link rel="stylesheet" href="/assets/experience.css" />
+    <script src="/assets/app.js" defer></script>
+    <script src="/assets/university.js" defer></script>
+    <script src="/assets/academy.js" defer></script>
+    <script src="/assets/experience.js" defer></script>
+  </head>
+  <body data-page="exam">
+    <a class="sr-only" href="#content">Saltar al contenido</a>
+    <header id="header"></header>
+    <main id="content" class="container">
+      <div class="page-head">
+        <a href="/cursos.html">← Mis cursos</a>
+        <p class="eyebrow" id="exam-career"></p>
+        <h1>Pon tus ideas a prueba.</h1>
+        <p id="exam-title"></p>
+      </div>
+      <div class="narrow">
+        <div class="banner">
+          6 preguntas sobre tu curso · Nota sobre 100 · Apruebas con 70 o más. Puedes
+          volver a intentarlo.
+        </div>
+        <form id="exam-form" class="card">
+          <div id="questions"></div>
+          <button type="submit" disabled>Guardar respuestas y calificar ↗</button>
+          <p class="message" role="status"></p>
+        </form>
+        <div id="exam-result" aria-live="polite"></div>
+      </div>
+    </main>
+    <footer class="container footer">
+      <span>© 2026 Nexo · Tu carrera, tu siguiente paso.</span
+      ><span>Proyecto académico · <a href="/universidad.html">Mi universidad ↗</a></span>
+    </footer>
+    <noscript>Activa JavaScript para utilizar la plataforma.</noscript>
+  </body>
+</html>

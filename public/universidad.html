@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Nexo: tu universidad, cursos por carrera y banca de práctica conectada."
+    />
+    <meta name="theme-color" content="#1d2927" />
+    <title>Mi universidad · Nexo</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%231d2927'/%3E%3Ctext x='10' y='29' fill='%23d6f66b' font-size='30'%3En%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/university.css" />
+    <link rel="stylesheet" href="/assets/experience.css" />
+    <script src="/assets/app.js" defer></script>
+    <script src="/assets/university.js" defer></script>
+    <script src="/assets/academy.js" defer></script>
+    <script src="/assets/experience.js" defer></script>
+  </head>
+  <body data-page="university">
+    <a class="sr-only" href="#content">Saltar al contenido</a>
+    <header id="header"></header>
+    <main id="content" class="container">
+      <section class="campus-hero">
+        <div class="orb one"></div>
+        <div class="campus-hero-copy">
+          <span class="eyebrow">UNIVERSIDAD NEXO · MI CAMPUS</span>
+          <h1>Tu futuro,<br /><em>bien encaminado.</em></h1>
+          <p>
+            Hola, <span data-name></span>. Tu recorrido académico y tus finanzas,
+            conectados en un mismo lugar.
+          </p>
+          <div class="row">
+            <a class="btn lime" href="/colegiaturas.html">Consultar mis colegiaturas ↗</a
+            ><a class="btn translucent" href="/cursos.html">Continuar aprendiendo →</a>
+          </div>
+        </div>
+        <div class="student-pass">
+          <div class="row between">
+            <span class="eyebrow">MI CREDENCIAL DIGITAL</span
+            ><span class="pass-mark">n.</span>
+          </div>
+          <div class="avatar" id="campus-avatar">N</div>
+          <h2 id="campus-name">Cargando tu perfil…</h2>
+          <p id="campus-career"></p>
+          <div class="row between pass-bottom">
+            <span id="student-code" class="account"></span
+            ><span class="tag">Estudiante activo</span>
+          </div>
+        </div>
+      </section>
+      <div class="section-title">
+        <div>
+          <span class="eyebrow">TODO CLARO, TODO A MANO</span>
+          <h2>Tu universidad en un vistazo.</h2>
+        </div>
+        <span class="pill" id="campus-today"></span>
+      </div>
+      <section class="metrics" id="campus-metrics" aria-live="polite"></section>
+      <section class="campus-layout section-gap">
+        <div class="stack">
+          <article class="card">
+            <div class="row between">
+              <div>
+                <span class="eyebrow">TESORERÍA / RESUMEN</span>
+                <h2>Así van tus semestres.</h2>
+              </div>
+              <a class="text-link" href="/colegiaturas.html">Ver detalle ↗</a>
+            </div>
+            <div id="semester-cards" class="two"></div>
+            <p class="muted fine">
+              Semestres con deuda y semestres por cursar son cosas distintas: aquí ves las
+              cuotas pendientes de los dos períodos cargados.
+            </p>
+          </article>
+          <article class="card">
+            <div class="row between">
+              <div>
+                <span class="eyebrow">TU CAMINO ACADÉMICO</span>
+                <h2>Un paso a la vez.</h2>
+              </div>
+              <span class="tag">Plan de demostración</span>
+            </div>
+            <div id="academic-path"></div>
+            <div class="row section-gap">
+              <a class="btn secondary" href="/cursos.html">Mis cursos y diplomas ↗</a
+              ><a class="text-link" href="/perfil.html">Consultar mi carrera →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="row between">
+              <h2>Mis últimos recibos</h2>
+              <a href="/colegiaturas.html#receipts">Ver todos ↗</a>
+            </div>
+            <div id="campus-receipts"></div>
+          </article>
+        </div>
+        <aside class="stack">
+          <article class="card funding-card">
+            <span class="infinity">∞</span
+            ><span class="eyebrow">TU BANCA TAMBIÉN ES TUYA</span>
+            <h2>Aprende a pagar.<br />Sin quedarte sin saldo.</h2>
+            <p>
+              Los pagos de la universidad tienen fondos de práctica ilimitados. Si tu
+              saldo no alcanza, Nexo abona la diferencia y registra el pago.
+            </p>
+            <div class="row between">
+              <span>Saldo en banca</span><strong id="campus-balance"></strong>
+            </div>
+            <a class="btn lime" href="/banca.html">Abrir mi banca ↗</a
+            ><small>Dinero ficticio. Sin cobros reales.</small>
+          </article>
+          <article class="card">
+            <span class="eyebrow">REGLAS TRANSPARENTES</span>
+            <h3>Sin sorpresas en tu cuenta.</h3>
+            <ul class="rule-list">
+              <li><b>Q650</b><span>por mensualidad de ejemplo.</span></li>
+              <li>
+                <b>Q25</b><span>por cada mes calendario de atraso, por cuota.</span>
+              </li>
+              <li>
+                <b>Fin de mes</b><span>es la fecha límite para pagar sin mora.</span>
+              </li>
+              <li>
+                <b>Un recibo</b
+                ><span>por pago, con el detalle de tus cuotas y multas.</span>
+              </li>
+            </ul>
+            <a href="/colegiaturas.html#fee-policy">¿Cómo se calcula la mora? ↗</a>
+          </article>
+        </aside>
+      </section>
+    </main>
+    <footer class="container footer">
+      <span>© 2026 Nexo · Tu carrera, tu siguiente paso.</span
+      ><span>Proyecto académico · <a href="/universidad.html">Mi universidad ↗</a></span>
+    </footer>
+    <noscript>Activa JavaScript para utilizar la plataforma.</noscript>
+  </body>
+</html>

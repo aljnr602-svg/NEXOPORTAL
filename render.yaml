@@ -1,0 +1,17 @@
+# Demostración gratuita: SQLite se reinicia si Render reinicia o suspende el servicio.
+# Para conservar los datos, configura un disco persistente en un servicio compatible.
+services:
+  - type: web
+    name: nexoportal
+    runtime: node
+    plan: free
+    buildCommand: node --version
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 24
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0

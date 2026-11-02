@@ -1,0 +1,13 @@
+{
+  "name": "nexo-portal-academico",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Nexo: universidad, banca conectada y cursos con videos y evaluaciones por carrera",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}

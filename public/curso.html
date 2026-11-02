@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Nexo: tu universidad, cursos por carrera y banca de práctica conectada."
+    />
+    <meta name="theme-color" content="#1d2927" />
+    <title>Mi aula · Nexo</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%231d2927'/%3E%3Ctext x='10' y='29' fill='%23d6f66b' font-size='30'%3En%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/university.css" />
+    <link rel="stylesheet" href="/assets/experience.css" />
+    <script src="/assets/app.js" defer></script>
+    <script src="/assets/university.js" defer></script>
+    <script src="/assets/academy.js" defer></script>
+    <script src="/assets/experience.js" defer></script>
+  </head>
+  <body data-page="lesson">
+    <a class="sr-only" href="#content">Saltar al contenido</a>
+    <header id="header"></header>
+    <main id="content" class="container">
+      <div class="page-head">
+        <a href="/cursos.html">← Mis cursos</a>
+        <p class="eyebrow" id="lesson-career"></p>
+        <h1 id="lesson-title">Preparando tu aula…</h1>
+        <p id="lesson-intro"></p>
+      </div>
+      <div class="narrow">
+        <article class="card lesson">
+          <div id="lesson-body"></div>
+          <section class="lesson-video-block">
+            <span class="eyebrow">TU CLASE EN VIDEO</span>
+            <h2 id="video-title"></h2>
+            <p id="video-credit" class="muted fine"></p>
+            <iframe
+              id="lesson-video"
+              title="Video del curso"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+            <p>
+              <a id="video-link" target="_blank" rel="noopener"
+                >Abrir el video en YouTube ↗</a
+              >
+            </p>
+            <p class="muted fine">
+              El video requiere Internet. Si el autor restringe su reproducción aquí,
+              utiliza el enlace para verlo en YouTube.
+            </p>
+          </section>
+          <div class="banner">
+            <strong>Tu práctica</strong>
+            <p id="lesson-practice"></p>
+          </div>
+          <a class="btn" id="exam-link" href="/cursos.html"
+            >Poner a prueba lo aprendido ↗</a
+          >
+        </article>
+      </div>
+    </main>
+    <footer class="container footer">
+      <span>© 2026 Nexo · Tu carrera, tu siguiente paso.</span
+      ><span>Proyecto académico · <a href="/universidad.html">Mi universidad ↗</a></span>
+    </footer>
+    <noscript>Activa JavaScript para utilizar la plataforma.</noscript>
+  </body>
+</html>

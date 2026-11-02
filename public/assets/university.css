@@ -1,0 +1,959 @@
+/* Campus Nexo: mantiene la identidad del portal y amplía sus componentes. */
+:root {
+  --campus-green: #284d41;
+  --campus-light: #e8eddf;
+  --campus-orange: #f1c7a8;
+}
+.container.topbar {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.section-gap {
+  margin-top: 26px;
+}
+.fine {
+  font-size: 13px;
+  line-height: 1.65;
+}
+.full-width {
+  width: 100%;
+}
+.text-link {
+  font-weight: 600;
+  text-underline-offset: 4px;
+}
+.soft-highlight {
+  color: #577849;
+}
+.nav-profile {
+  width: 36px;
+  height: 36px;
+  background: var(--purple);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-weight: 700;
+  color: var(--ink);
+}
+.campus-hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  padding: 55px;
+  background: var(--campus-green);
+  color: white;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+.campus-hero h1 {
+  font-size: clamp(42px, 5.5vw, 68px);
+  letter-spacing: -3px;
+  margin: 25px 0;
+}
+.campus-hero h1 em {
+  font-style: normal;
+  color: var(--lime);
+}
+.campus-hero p {
+  color: #d3e1d5;
+  max-width: 500px;
+}
+.campus-hero-copy,
+.student-pass {
+  position: relative;
+  z-index: 1;
+}
+.translucent {
+  background: #ffffff18;
+  border: 1px solid #ffffff40;
+  color: white;
+}
+.student-pass {
+  background: #f6f8ee;
+  color: var(--ink);
+  border-radius: 22px;
+  padding: 26px;
+  box-shadow: 10px 15px 0 #143b31;
+  transform: rotate(3deg);
+  background-image: radial-gradient(circle at 100% 0, #d6f66b60, transparent 65%);
+}
+.student-pass p {
+  color: var(--muted);
+  margin: 8px 0 22px;
+}
+.student-pass .avatar {
+  margin: 20px 0 15px;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  background: var(--campus-green);
+  color: var(--lime);
+}
+.student-pass h2 {
+  font-size: 26px;
+}
+.pass-mark {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+}
+.pass-bottom {
+  padding-top: 20px;
+  border-top: 1px dashed #bfc7b7;
+}
+.pass-bottom .account {
+  font-size: 13px;
+}
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.metric {
+  border-radius: 18px;
+  padding: 23px;
+  background: white;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 150px;
+}
+.metric .eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.4px;
+}
+.metric > strong {
+  font-family: 'Space Grotesk', Arial, sans-serif;
+  font-size: 32px;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+}
+.metric small {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.metric.warm {
+  background: #f8ede2;
+  border-color: #ebd9c8;
+}
+.metric.accent {
+  background: var(--lime);
+  border-color: var(--lime);
+}
+.metric.accent small {
+  color: #485c25;
+}
+.campus-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
+  gap: 24px;
+}
+.campus-layout .two {
+  gap: 15px;
+}
+.semester-card {
+  border: 1px solid var(--line);
+  background: #fafbf6;
+  border-radius: 18px;
+  padding: 20px;
+}
+.semester-card h3 {
+  margin-top: 20px;
+  font-size: 25px;
+}
+.semester-card .eyebrow {
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+.semester-amount {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin: 10px 0;
+}
+.semester-card .btn {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.progress-track {
+  height: 6px;
+  background: #e3e8da;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.progress-track span {
+  display: block;
+  height: 100%;
+  background: #65874f;
+  border-radius: 8px;
+}
+.status-badge {
+  font-size: 11px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.status-badge.paid {
+  background: #e1f0df;
+  color: #345c31;
+}
+.status-badge.overdue {
+  background: #fae1d6;
+  color: #9a422b;
+}
+.status-badge.pending {
+  background: #ece7fb;
+  color: #67518a;
+}
+.funding-card {
+  background: var(--ink);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.funding-card h2 {
+  margin: 0;
+}
+.funding-card p {
+  color: #c5d1c6;
+  margin: 0 0 10px;
+}
+.funding-card small {
+  color: #aebcaf;
+}
+.funding-card .infinity {
+  font-size: 65px;
+  line-height: 1;
+  color: var(--lime);
+  font-family: Arial, sans-serif;
+}
+.funding-card .eyebrow {
+  font-size: 10px;
+  color: #d6e3cd;
+}
+.funding-card .btn {
+  margin-top: 12px;
+}
+.rule-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 25px;
+}
+.rule-list li {
+  padding: 13px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-bottom: 1px solid var(--line);
+}
+.rule-list li b {
+  font-size: 19px;
+}
+.rule-list li span {
+  font-size: 13px;
+  color: var(--muted);
+}
+.academic-steps {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+  margin: 20px 0 25px;
+}
+.academic-step {
+  text-align: center;
+}
+.academic-step > span {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #f7f8f3;
+  color: #909886;
+  font-weight: 600;
+}
+.academic-step.done > span {
+  background: #e9efdc;
+  color: #527237;
+  border-color: #e9efdc;
+}
+.academic-step.current > span {
+  background: var(--ink);
+  color: var(--lime);
+  border-color: var(--ink);
+}
+.academic-step small {
+  font-size: 9px;
+  margin-top: 9px;
+}
+.receipt-value {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.receipt-value a {
+  font-size: 12px;
+}
+.receipt-icon {
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-items: center;
+  background: var(--campus-light);
+  border-radius: 12px;
+  font-size: 20px;
+}
+.receipt-list strong {
+  font-size: 14px;
+}
+.receipt-list small {
+  font-size: 11px;
+}
+.campus-link-bar {
+  background: var(--campus-light);
+  border: 1px solid #dce4ce;
+  padding: 25px;
+  border-radius: 22px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.campus-link-bar p {
+  font-size: 13px;
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+.campus-link-bar .eyebrow {
+  font-size: 10px;
+}
+.portal-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.portal-grid .card {
+  padding: 24px;
+}
+.portal-grid h2 {
+  font-size: 26px;
+}
+.campus-module {
+  background: #edf2e4;
+}
+.bank-university {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  background: #edf2e4;
+  border-color: #d5dfc8;
+}
+.bank-university h3 {
+  font-size: 22px;
+}
+.bank-university p {
+  font-size: 13px;
+  margin: 6px 0 0;
+}
+.campus-bank-icon {
+  width: 54px;
+  height: 54px;
+  background: var(--ink);
+  color: var(--lime);
+  font-size: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+  flex-shrink: 0;
+}
+.bank-campus-action {
+  min-width: 180px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 8px;
+}
+.bank-campus-action > strong {
+  font-size: 30px;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -1px;
+}
+.bank-campus-action .btn {
+  font-size: 12px;
+}
+.balance .message {
+  color: #d6f66b;
+  font-size: 12px;
+}
+.billing-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.billing-toolbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 24px;
+}
+.billing-toolbar input,
+.billing-toolbar select {
+  font-size: 13px;
+}
+.quick-select {
+  gap: 8px;
+}
+.quick-select button {
+  font-size: 11px;
+  padding: 9px 11px;
+}
+.invoice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.invoice-item {
+  padding: 17px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fcfcf8;
+  min-width: 0;
+}
+.invoice-item.overdue {
+  border-top: 3px solid #cc997c;
+}
+.invoice-item.paid {
+  background: #f4f7ef;
+}
+.invoice-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.invoice-label {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  cursor: pointer;
+}
+.invoice-label input {
+  width: 17px;
+  height: 17px;
+  margin: 3px 0 0;
+  flex-shrink: 0;
+}
+.invoice-label small {
+  font-size: 10px;
+  margin-top: 5px;
+}
+.invoice-top .status-badge {
+  font-size: 9px;
+  padding: 5px 7px;
+}
+.invoice-detail {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 11px 0;
+  color: var(--muted);
+}
+.invoice-detail strong {
+  color: var(--ink);
+}
+.invoice-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 14px;
+  margin-top: 15px;
+  border-top: 1px dashed var(--line);
+  align-items: center;
+}
+.invoice-bottom small {
+  font-size: 10px;
+  line-height: 1.6;
+  max-width: 130px;
+}
+.invoice-bottom strong {
+  font-size: 17px;
+  white-space: nowrap;
+}
+.paid-check {
+  font-size: 17px;
+  color: #65874f;
+}
+.demo-history {
+  font-size: 10px;
+  margin-top: 12px;
+}
+.checkout {
+  position: sticky;
+  top: 20px;
+}
+.checkout h2 {
+  font-size: 27px;
+}
+.checkout-count {
+  padding: 20px;
+  background: var(--bg);
+  border-radius: 15px;
+  margin: 22px 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.checkout-count > span {
+  font-size: 32px;
+  color: var(--ink);
+  font-family: 'Space Grotesk', sans-serif;
+  margin-right: 8px;
+}
+.payment-lines > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  font-size: 13px;
+  padding: 12px 0;
+}
+.payment-lines .payment-total {
+  border-top: 1px dashed #c6cfb9;
+  margin: 10px 0 15px;
+  padding-top: 22px;
+  align-items: center;
+}
+.payment-total strong {
+  font-size: 27px;
+  letter-spacing: -1px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.wallet-chip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+.wallet-chip .tag {
+  margin-left: auto;
+  white-space: nowrap;
+}
+.wallet-chip strong {
+  font-size: 13px;
+}
+.wallet-chip small {
+  font-size: 10px;
+  font-family: monospace;
+}
+.wallet-icon {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  background: var(--purple);
+  border-radius: 10px;
+  font-size: 22px;
+}
+.topup-note {
+  background: #e7efdb;
+  color: #486035;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.checkout .text-link {
+  font-size: 13px;
+}
+.fee-example {
+  border-radius: 15px;
+  background: var(--bg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+}
+.fee-example strong {
+  font-size: 22px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.payment-dialog {
+  border: 0;
+  border-radius: 25px;
+  padding: 30px;
+  max-width: 540px;
+  width: calc(100% - 35px);
+  max-height: 85vh;
+  overflow-y: auto;
+  color: var(--ink);
+}
+.payment-dialog::backdrop {
+  background: #12251be0;
+  backdrop-filter: blur(4px);
+}
+.payment-dialog h2 {
+  font-size: 33px;
+}
+.payment-review-list {
+  padding: 0;
+  list-style: none;
+  max-height: 220px;
+  overflow-y: auto;
+}
+.payment-review-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.payment-dialog #close-payment {
+  padding: 8px 12px;
+}
+.university-receipt {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+}
+.receipt-header {
+  padding-bottom: 30px;
+  border-bottom: 1px dashed var(--line);
+}
+.university-receipt h1 {
+  font-size: 45px;
+  letter-spacing: -2px;
+  margin: 32px 0;
+}
+.receipt-people {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 30px 0;
+}
+.receipt-people h3 {
+  font-size: 20px;
+  overflow-wrap: anywhere;
+}
+.receipt-people p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 10px 0;
+}
+.receipt-people .account {
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+.receipt-summary {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+.receipt-summary > .payment-lines {
+  width: 330px;
+}
+.receipt-footnote {
+  padding: 20px;
+  margin-top: 20px;
+  background: var(--bg);
+  border-radius: 15px;
+  font-size: 12px;
+}
+.receipt-footnote p {
+  margin: 7px 0;
+}
+.receipt-links {
+  justify-content: center;
+  margin: 25px 0;
+}
+@media (min-width: 901px) and (max-width: 1100px) {
+  .campus-hero {
+    padding: 35px;
+    gap: 35px;
+  }
+  .campus-layout,
+  .billing-layout {
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  }
+  .campus-layout .two,
+  .invoice-grid {
+    grid-template-columns: 1fr;
+  }
+  .portal-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .metric {
+    padding: 18px;
+  }
+  .metric > strong {
+    font-size: 28px;
+  }
+  .topbar nav a {
+    font-size: 13px;
+    padding: 9px;
+  }
+  .topbar {
+    gap: 15px;
+  }
+}
+@media (max-width: 900px) {
+  .campus-hero {
+    grid-template-columns: 1fr;
+    padding: 35px;
+  }
+  .student-pass {
+    max-width: 460px;
+    transform: rotate(1deg);
+    margin-bottom: 15px;
+  }
+  .campus-hero-copy h1 {
+    font-size: 55px;
+  }
+  .campus-layout,
+  .billing-layout {
+    grid-template-columns: 1fr;
+  }
+  .metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+  .checkout {
+    position: static;
+  }
+  .billing-layout > aside {
+    grid-row: 1;
+  }
+  .checkout .checkout-count {
+    margin: 14px 0;
+    padding: 12px;
+  }
+  .portal-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .topbar {
+    flex-wrap: wrap;
+  }
+  .campus-link-bar {
+    flex-wrap: wrap;
+  }
+  .bank-university {
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .bank-campus-action {
+    text-align: left;
+    align-items: start;
+  }
+  .receipt-people {
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .topbar {
+    padding: 20px 0;
+  }
+  .topbar nav {
+    gap: 4px;
+  }
+  .topbar nav a {
+    padding: 7px;
+    font-size: 12px;
+  }
+  .topbar .nav-profile {
+    width: 28px;
+    height: 28px;
+  }
+  .campus-hero {
+    padding: 30px 23px;
+    gap: 30px;
+    border-radius: 22px;
+  }
+  .campus-hero-copy h1 {
+    font-size: 44px;
+    letter-spacing: -2px;
+  }
+  .campus-hero-copy p {
+    font-size: 14px;
+  }
+  .student-pass {
+    padding: 22px;
+  }
+  .student-pass h2 {
+    font-size: 24px;
+  }
+  .student-pass .eyebrow {
+    font-size: 9px;
+  }
+  .metrics {
+    gap: 10px;
+  }
+  .metric {
+    padding: 17px 13px;
+    min-height: 145px;
+    gap: 11px;
+  }
+  .metric .eyebrow {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+  .metric > strong {
+    font-size: 25px;
+    letter-spacing: -1px;
+  }
+  .metric small {
+    font-size: 11px;
+  }
+  .portal-grid {
+    grid-template-columns: 1fr;
+  }
+  .campus-layout .two,
+  .invoice-grid {
+    grid-template-columns: 1fr;
+  }
+  .billing-toolbar {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .billing-layout > .stack > .card {
+    padding: 20px;
+  }
+  .academic-steps {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  .academic-step > span {
+    aspect-ratio: auto;
+    height: 40px;
+  }
+  .academic-step small {
+    font-size: 10px;
+  }
+  .semester-card h3 {
+    font-size: 25px;
+  }
+  .bank-university > .row {
+    align-items: start;
+    flex-wrap: nowrap;
+  }
+  .bank-university h3 {
+    font-size: 20px;
+  }
+  .campus-bank-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+  }
+  .bank-campus-action {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+  }
+  .bank-campus-action > small {
+    width: 100%;
+  }
+  .bank-campus-action > strong {
+    font-size: 27px;
+  }
+  .university-receipt {
+    padding: 22px;
+  }
+  .university-receipt h1 {
+    font-size: 34px;
+  }
+  .receipt-header {
+    align-items: start;
+    gap: 20px;
+  }
+  .receipt-header .brand {
+    font-size: 24px;
+  }
+  .receipt-header h2 {
+    font-size: 20px;
+  }
+  .receipt-header .eyebrow {
+    font-size: 9px;
+  }
+  .receipt-header small {
+    font-size: 10px;
+  }
+  .receipt-people {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .receipt-summary > .payment-lines {
+    width: 100%;
+  }
+  .receipt-list > li {
+    align-items: start;
+    gap: 15px;
+  }
+  .receipt-value {
+    gap: 5px;
+  }
+  .receipt-list strong {
+    font-size: 12px;
+  }
+  .receipt-icon {
+    display: none;
+  }
+  .fee-example strong {
+    font-size: 19px;
+  }
+  .payment-dialog {
+    padding: 24px;
+  }
+}
+@media print {
+  .university-receipt {
+    max-width: none;
+    border: 0;
+    padding: 0;
+  }
+  .university-receipt h1 {
+    font-size: 32px;
+  }
+  .university-receipt table {
+    font-size: 11px;
+  }
+  .university-receipt th,
+  .university-receipt td {
+    padding: 10px 6px;
+  }
+  .receipt-header,
+  .receipt-people,
+  .receipt-summary,
+  .receipt-footnote {
+    break-inside: avoid;
+  }
+  .university-receipt tr {
+    break-inside: avoid;
+  }
+  .receipt-footnote {
+    background: #f4f4f4;
+  }
+  .receipt-header .brand {
+    print-color-adjust: exact;
+  }
+  .status-badge {
+    border: 1px solid #aaa;
+  }
+  .university-receipt .table-wrap {
+    overflow: visible;
+  }
+}
+@media (max-width: 600px) {
+  .container.topbar {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}

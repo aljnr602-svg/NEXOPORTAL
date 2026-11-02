@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Nexo: tu universidad, cursos por carrera y banca de práctica conectada."
+    />
+    <meta name="theme-color" content="#1d2927" />
+    <title>Nexo Banca · Nexo</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%231d2927'/%3E%3Ctext x='10' y='29' fill='%23d6f66b' font-size='30'%3En%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/university.css" />
+    <link rel="stylesheet" href="/assets/experience.css" />
+    <script src="/assets/app.js" defer></script>
+    <script src="/assets/university.js" defer></script>
+    <script src="/assets/academy.js" defer></script>
+    <script src="/assets/experience.js" defer></script>
+  </head>
+  <body data-page="bank">
+    <a class="sr-only" href="#content">Saltar al contenido</a>
+    <header id="header"></header>
+    <main id="content" class="container">
+      <div class="page-head">
+        <span class="eyebrow">NEXO BANCA / TÚ LLEVAS LAS CUENTAS</span>
+        <h1>Tu dinero, en perspectiva.</h1>
+        <p>Consulta, transfiere y organiza tus movimientos en un solo lugar.</p>
+      </div>
+      <div class="banner">
+        Fondos de práctica ilimitados. Recarga gratis las veces que quieras; al pagar la
+        universidad, Nexo completa automáticamente el saldo que te falte.
+      </div>
+      <section id="bank-university" class="card bank-university section-gap"></section>
+      <div class="two section-gap">
+        <section class="card balance">
+          <span class="eyebrow">SALDO DISPONIBLE</span>
+          <div id="balance" class="stat"></div>
+          <div id="holder"></div>
+          <p id="account" class="account"></p>
+          <div class="row">
+            <button id="copy-account" class="lime">Copiar cuenta ↗</button
+            ><button id="topup-button" class="translucent">＋ Recargar Q10,000</button>
+          </div>
+          <p id="topup-status" class="message" role="status"></p>
+        </section>
+        <section class="card">
+          <span class="eyebrow">A TU ALCANCE</span>
+          <h2>Tu vida universitaria, conectada.</h2>
+          <p class="muted">
+            Paga tu universidad sin escribir una cuenta destino. Las colegiaturas, la mora
+            y el recibo se conectan automáticamente con tus movimientos. También puedes
+            transferir a otro usuario o pagar servicios.
+          </p>
+          <p><a class="btn lime" href="/colegiaturas.html">Pagar mi universidad ↗</a></p>
+          <a class="btn secondary" href="/estado-cuenta.html"
+            >Generar estado de cuenta ↗</a
+          >
+          <p>
+            <small
+              >Para probar una transferencia, registra un segundo usuario y copia su
+              número de cuenta.</small
+            >
+          </p>
+        </section>
+      </div>
+      <div class="two" style="margin-top:24px">
+        <form id="transfer-form" class="card">
+          <h2>Enviar una transferencia</h2>
+          <label
+            >Cuenta destino<input
+              name="destination"
+              required
+              maxlength="40"
+              placeholder="NX…" /></label
+          ><label
+            >Monto en quetzales<input
+              name="amount"
+              type="number"
+              min="0.01"
+              max="1000000"
+              step="0.01"
+              required
+              placeholder="0.00" /></label
+          ><button type="submit">Transferir ↗</button>
+          <p class="message" role="status"></p>
+        </form>
+        <form id="payment-form" class="card">
+          <h2>Pagar un servicio</h2>
+          <label
+            >Servicio<select name="service" required>
+              <option>Telefonía</option>
+              <option>Agua potable</option>
+              <option>Electricidad</option>
+              <option>Internet</option>
+            </select></label
+          ><label
+            >Referencia del recibo<input
+              name="reference"
+              required
+              maxlength="60"
+              placeholder="Número de contrato o recibo" /></label
+          ><label
+            >Monto en quetzales<input
+              name="amount"
+              type="number"
+              min="0.01"
+              max="1000000"
+              step="0.01"
+              required
+              placeholder="0.00" /></label
+          ><button type="submit">Registrar pago ↗</button>
+          <p class="message" role="status"></p>
+        </form>
+      </div>
+      <section class="card" style="margin-top:24px">
+        <div class="row between">
+          <h2>Últimos movimientos</h2>
+          <a href="/estado-cuenta.html">Ver todos ↗</a>
+        </div>
+        <div id="movements"></div>
+      </section>
+    </main>
+    <footer class="container footer">
+      <span>© 2026 Nexo · Tu carrera, tu siguiente paso.</span
+      ><span>Proyecto académico · <a href="/universidad.html">Mi universidad ↗</a></span>
+    </footer>
+    <noscript>Activa JavaScript para utilizar la plataforma.</noscript>
+  </body>
+</html>
